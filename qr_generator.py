@@ -15,7 +15,7 @@ qr = qrcode.QRCode(
 qr.add_data(data)
 qr.make(fit=True)
 
-img = qr.make_image(fill_color="black", back_color="white")
-img.save("qr.png")
+img = qr.make_image(fill_color="#FF0000", back_color="white")
+img.save("redqr.png")
 
 print("Done! Saved to qr.png")
